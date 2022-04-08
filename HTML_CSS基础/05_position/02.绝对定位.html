@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-size: 50px;
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            /* margin-left: 200px;
+            margin-top: -200px; */
+
+            /* 
+                定位(position)
+                    - 是一种更加高级的布局手段
+                    - 通过定位可以将元素摆放在页面的任意位置
+                    - 使用 position 属性来设置定位
+                        可选值：
+                            - static 默认值，元素是静止的，没有开启定位
+                            - relative 开启元素的相对定位
+                                ·相对定位的特点：
+                                    1.元素开启相对定位之后，如果不设置相对偏移量，
+                                      元素不会发生任何变化
+                                    2.参照与定位元素在文档流中的位置
+                                    3.相对定位会提升元素的层级
+                                    4.相对定位不会是元素脱离文档流
+                                    5.相对定位不会改变元素的性质，块还是块，
+                                      行内还是行内
+                            - absolute 开启元素的绝对定位
+                                ·绝对定位的特点
+                                    1.元素开启绝对定位之后，如果不设置相对偏移量，
+                                      元素的位置不会发生任何变化
+                                    2.绝对定位会使定位元素会从文档流中脱离
+                                    3.绝对定位会改变元素的性质，行内变成块，块的高宽度被内容撑开
+                                    4.绝对定位会是元素提升一个层级
+                                    5.绝对定位是相对于其包含块定位
+                                ·包含块(containing block)
+                                    - 正常情况下：
+                                        包含块就是当前元素最近的祖先块元素
+
+                                    - 绝对定位的包含块：
+                                        包含块就是离它最近的开启定位的祖先元素
+                                            如果所有的祖先元素都没有开启定位则根元素就是包含块
+
+                                    - html(根元素、初始包含块)
+                                    
+                            - fixed 开启元素的固定定位
+                            - sticky 开启元素的粘滞定位
+                    - 偏移量(offset)
+                        -当元素开启定位后，可以通过偏移量来设置元素的位置
+                            top
+                                -定位元素和定位位置下的距离
+                            bottom
+                                -定位元素和定位位置下边的距离
+                                -top 和 bottom一般只使用一个
+                            left
+                                -定位元素和定位位置左边的距离
+                            right
+                                -定位元素和定位位置右边的距离
+                                -left 和 right一般只使用一个
+            */
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+
+            /* margin-top: 200px; */
+        }
+
+        .box4{
+            width: 400px;
+            height: 400px;
+            background-color: tomato;
+            position: relative;
+        }
+        .box5{
+            width: 300px;
+            height: 300px;
+            background-color: aliceblue;
+            position: relative;
+        }
+
+        /* .clearfix::before
+        .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        } */
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box4">
+        4
+        <div class="box5">
+            5
+            <div class="box2">2</div>
+        </div>
+    </div>
+    <div class="box3">3</div>
+</body>
+</html>

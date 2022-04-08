@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        /* 
+            :link 未访问的连接(正常的连接)
+        */
+        a:link{
+            color: red;
+        }
+
+        /*  
+            :visited 访问过的连接
+
+            由于隐私的原因，所有visited这个伪类只能修改连接的颜色
+        */
+        a:visited{
+            color: orange;
+        }
+
+        /* 
+            :hover 用来表示鼠标移入的状态
+        */
+        a:hover{
+            color: aqua;
+            font-size: 50px;
+        }
+
+        /*  
+            :active 表示鼠标点击
+        */
+        a:active{
+            color: yellowgreen;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- 
+        1.访问过的连接
+        2.未访问的连接
+     -->
+
+    <a href="https://www.baidu.com" target="_blank">访问过的链接</a>
+    <br><br>
+    <a href="https://www.baidu123.com" target="_blank">未访问的连接</a>
+    
+</body>
+</html>

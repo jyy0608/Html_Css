@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            /* 
+                颜色单位：
+                    -在CSS中可以直接使用颜色名称来设置各种颜色
+                    -RGB值(0-255或(0%-100%))
+                        -语法，RGB(红色, 绿色, 蓝色)
+
+                    -RGBA：在RGB的基础上加上一个a表示透明度
+                    -十六进制的RGB值
+                        -语法：#红色绿色蓝色
+                        -颜色浓度通过 00-ff
+                        -如果颜色两位两位重复可以简写
+                            #aabbcc --> #abc
+
+                    -HSL值 HSLA值
+                        -H 色相(0 - 360)
+                        -S 饱和度，颜色浓度 0% - 100%
+                        -L 亮度 0% - 100%
+            */
+            background-color: red;
+            background-color:rgb(255, 0, 0);
+            background-color:rgb(0, 255, 0);
+            background-color:rgb(0, 0, 255);
+            background-color:rgb(0, 0, 0);
+            background-color:rgb(255, 255, 255);
+            background-color:rgba(106, 153, 85, 0.5);
+            background-color: #ffff00;
+            background-color: #bfa;
+            background-color: hsl(0, 100%, 0%);
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="box1"></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        window.onload = function(){
+            myClick = function(idStr, fun){
+                var btn = document.getElementById(idStr);
+                btn.onclick = fun;
+            }
+
+            myClick("btn02", function(){
+                var li = document.createElement("li");
+                var gztext = document.createTextNode("广州");
+
+                var bj = document.getElementById("bj");
+                var city = document.getElementById("city");
+                // 在指定子节点前插入
+                city.insertBefore(li, bj);
+            })
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

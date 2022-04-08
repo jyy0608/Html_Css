@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <style>
+        /* 
+            设置ul样式
+        */
+        .img_list{
+            width: 590px;
+            height: 470px;
+            /* background-color: orange; */
+            /* 设置页面居中 */
+            position: absolute;
+            margin:auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        /* 
+            设置li图片样式
+        */
+        .img_list .imgs{
+            position: absolute;
+        }
+
+        .img_list li:nth-child(4){
+            z-index: 1;
+        }
+
+        /* 
+            设置point样式
+        */
+        .img_list .point{
+            /* width: 200px;
+            height: 20px; */
+            /* background-color: orange; */
+            z-index: 999;
+            position: absolute;
+            bottom: 20px;
+            left: 40px;
+        }
+
+        /* 
+            设置圆点样式
+        */
+        .img_list .point a{
+            width: 10px;
+            height: 10px;
+            /* 圆形 */
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, .3);
+            /* background-color: orange; */
+            /* 将背景颜色设置到内容区，边框和内边距不再有背景颜色 */
+            background-clip: content-box;
+            float: left;
+            margin:0 2px;
+            /* transparent 透明 */
+            border: 2px solid transparent;
+        }
+
+        /* 
+            设置鼠标移到圆点的特效
+        */
+        .img_list .point a:hover,
+        .img_list .point a:active{
+            background-color: #fff;
+            border: 2px solid rgba(255, 255, 255, .3);
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul class="img_list">
+        <li class="imgs">
+            <a href="javascript:;">
+                <img src="./img/05/1.jpg" alt="商品1">
+            </a>
+        </li>
+        
+        <li class="imgs">
+            <a href="">
+                <img src="./img/05/2.jpg" alt="商品2">
+            </a>
+        </li>
+        <li class="imgs">
+            <a href="javascript:;">
+                <img src="./img/05/3.jpg" alt="商品3">
+            </a>
+        </li>
+        <li class="imgs">
+            <a href="javascript:;">
+                <img src="./img/05/4.jpg" alt="商品4">
+            </a>
+        </li>
+        <li class="imgs">
+            <a href="javascript:;">
+                <img src="./img/05/5.jpg" alt="商品5">
+            </a>
+        </li>
+        <li class="imgs">
+            <a href="javascript:;">
+                <img src="./img/05/6.jpg" alt="商品6">
+            </a>
+        </li>
+        <li class="imgs">
+            <a href="javascript:;">
+                <img src="./img/05/7.jpg" alt="商品7">
+            </a>
+        </li>
+        <li class="imgs">
+            <a href="javascript:;">
+                <img src="./img/05/8.jpg" alt="商品8">
+            </a>
+        </li>
+
+        <div class="point">
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+    </ul>
+</body>
+</html>
